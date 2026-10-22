@@ -1,0 +1,4 @@
+# Runtime dependency (auto-installed on first run if missing).
+# tkinter is part of the Python standard library but is packaged separately on
+# some systems: Ubuntu `sudo apt install python3-tk`, macOS `brew install python-tk`.
+PyYAML>=5.4

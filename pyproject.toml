@@ -1,0 +1,40 @@
+# Project metadata and tool settings. The app runs straight from the checkout
+# (python3 k8s_manifest_gui.py); this file does not change that and the project is not
+# packaged for PyPI (no [build-system]).
+[project]
+name = "k8s-manifest-desktop"
+version = "1.0.0"
+description = "Desktop app (Tkinter) that builds Kubernetes manifests, cluster configs and CNI/CSI add-on configs from forms"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "John Shea" }]
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=5.4"]
+keywords = ["kubernetes", "yaml", "manifest", "generator", "kubeadm", "kind", "cni", "csi"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: MacOS X",
+    "Environment :: X11 Applications",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://github.com/johshea/k8s-manifest-desktop"
+Documentation = "https://github.com/johshea/k8s-manifest-desktop/tree/main/docs"
+Issues = "https://github.com/johshea/k8s-manifest-desktop/issues"
+Changelog = "https://github.com/johshea/k8s-manifest-desktop/blob/main/CHANGELOG.md"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["tests/output*", "tests/out-platforms"]
