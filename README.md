@@ -134,9 +134,7 @@ The suites cover:
 - tooltip coverage for every field
 - a GUI smoke test that drives every mode and dialog
 
-Optional checks run the real tools when they're installed: kubectl, kubeadm, kind, k3s, minikube,
-helm, talosctl, eksctl and others. CI runs the offline suites on Ubuntu and macOS. See
-[docs/testing.md](docs/testing.md).
+
 
 ## Contributing
 
